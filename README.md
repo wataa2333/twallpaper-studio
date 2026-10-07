@@ -4,11 +4,11 @@
 
 ## 制作说明
 
-本项目的 Windows 桌面适配、功能开发、导出问题修复与打包使用 **OpenAI Codex** 制作。
+Windows 桌面版由 **wataa2333** 制作与发布，项目的桌面适配、功能开发、导出问题修复与打包使用 **OpenAI Codex** 制作。软件界面内也注明源项目、原作者、发布账号和 Codex 制作说明，并提供两个仓库的入口。
 
 ## 使用
 
-从 [GitHub Releases](https://github.com/wataa2333/twallpaper-studio/releases/latest) 下载 `TWallpaper-Studio-1.0.1-Windows.exe`，双击即可使用，无需安装 Node.js，也无需联网。
+从 [GitHub Releases](https://github.com/wataa2333/twallpaper-studio/releases/latest) 下载 `TWallpaper-Studio-1.0.2-Windows.exe`，双击即可使用，无需安装 Node.js，也无需联网。
 
 1. 选择原站配色，或用色盘、HEX 输入设置 1–4 个颜色。
 2. 选择图案，调整大小、透明度、模糊、混合模式或遮罩。可关闭图案生成纯渐变。
@@ -57,4 +57,5 @@ npm run dist
 原渲染源码保留在 `vendor/twallpaper/` 与 `vendor/webgl/`，全部配色和图案列表在 `vendor/`，图案资源在 `public/patterns/`。桌面界面在 `src/app.ts`，Windows 主进程和导出逻辑在 `desktop/main.cjs`。
 
 保留原项目的 MIT 版权声明，见 `THIRD_PARTY_LICENSE.txt`。程序尚未进行代码签名。
+
 

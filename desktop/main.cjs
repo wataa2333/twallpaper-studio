@@ -12,6 +12,7 @@ function createWindow() {
 }
 ipcMain.handle('screen-size',()=>{const d=screen.getPrimaryDisplay();return {width:Math.round(d.size.width*d.scaleFactor),height:Math.round(d.size.height*d.scaleFactor)}});
 ipcMain.handle('github',()=>shell.openExternal('https://github.com/crashmax-dev/twallpaper'));
+ipcMain.handle('owner',()=>shell.openExternal('https://github.com/wataa2333/twallpaper-studio'));
 ipcMain.handle('save-config',async (_,config)=>{
   const r=await dialog.showSaveDialog(main,{defaultPath:'twallpaper-options.json',filters:[{name:'JSON',extensions:['json']}]});
   if(r.canceled) return false;

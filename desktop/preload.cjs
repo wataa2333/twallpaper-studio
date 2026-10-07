@@ -5,4 +5,5 @@ contextBridge.exposeInMainWorld('desktop', {
   openConfig: () => ipcRenderer.invoke('open-config'),
   screenSize: () => ipcRenderer.invoke('screen-size'),
   github: () => ipcRenderer.invoke('github'),
+  owner: () => ipcRenderer.invoke('owner'),
 });
