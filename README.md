@@ -2,6 +2,10 @@
 
 基于 [crashmax-dev/twallpaper](https://github.com/crashmax-dev/twallpaper) 的 Windows 离线壁纸制作软件。原项目作者：**Vitalij Ryndin（crashmax-dev）**；原网页：[twallpaper.js.org](https://twallpaper.js.org)。本仓库提供 Windows 桌面适配与图片导出功能，保留原项目的 MIT 版权声明。
 
+## 制作说明
+
+本项目的 Windows 桌面适配、功能开发、导出问题修复与打包使用 **OpenAI Codex** 制作。
+
 ## 使用
 
 从 [GitHub Releases](https://github.com/wataa2333/twallpaper-studio/releases/latest) 下载 `TWallpaper-Studio-1.0.1-Windows.exe`，双击即可使用，无需安装 Node.js，也无需联网。
