@@ -1,0 +1,46 @@
+{
+  "name": "twallpaper-studio",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Offline Telegram wallpaper studio for Windows",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "start": "electron .",
+    "dist": "npm run build && electron-builder --win portable --x64",
+    "test": "npm run build && electron . --smoke-test"
+  },
+  "devDependencies": {
+    "electron": "^44.6.0",
+    "electron-builder": "^26.15.3",
+    "esbuild": "^0.25.0"
+  },
+  "build": {
+    "appId": "local.twallpaper.studio",
+    "productName": "TWallpaper Studio",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "desktop/**/*",
+      "dist/**/*",
+      "THIRD_PARTY_LICENSE.txt"
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": true,
+      "icon": "public/icon.ico",
+      "signExecutable": false
+    },
+    "portable": {
+      "artifactName": "TWallpaper-Studio-${version}-Windows.exe"
+    }
+  },
+  "author": "TWallpaper Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wataa2333/twallpaper-studio.git"
+  },
+  "homepage": "https://github.com/wataa2333/twallpaper-studio"
+}
